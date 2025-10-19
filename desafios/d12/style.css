@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=BBH+Sans+Hegarty&family=Sriracha&display=swap');
+
+
+
+:root{
+    --fonte-BBh: font-family: "BBH Sans Hegarty", sans-serif;
+    --fonte-sriracha: font-family: "Sriracha", cursive;
+}
+
 *{
+    
     margin: 0px;
     padding: 0px;
 }
@@ -40,6 +50,7 @@ section{
 }
 
 .normal{
+    font-family:var(--fonte-BBh);
     background-color: white;
     color: black;
 }
