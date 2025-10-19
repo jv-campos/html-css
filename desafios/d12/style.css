@@ -16,9 +16,11 @@
 html, body{
     font-family: var(--font1);
     min-width: 100vh;
+    min-width: 100vw;
     background-color: darkgrey;
 }
 header{
+    font-size: 3.5vw;
     background-color: black;
     color: white;
     text-align: center;
@@ -46,12 +48,16 @@ a:hover{
 }
 
 section{
-    font-size: 3.5vw;
+    font-size: 3vw;
     font-family: var(--fonte-sriracha);
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 8px;
     line-height: 1.9em;
+}
+
+section p{
+    padding-bottom: 2em;
 }
 
 .normal{
@@ -60,14 +66,30 @@ section{
 }
 
 .imagem{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+    background-attachment: fixed;
     background-color: rgb(20, 20, 20);
     color: white;
 }
 
 .imagem p{
+    border-radius: 8px;
     display: inline-block;
-    padding: 8px;
-    background-color: rgba(0, 0, 0, 0.178);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.753);
+    text-shadow: 2px 2px 2px black ;
+}
+
+#imagem01{
+    background-image: url(imagens/background-girasol.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#imagem02{
+    background-image: url(imagens/background-folha.jpg);
+    background-position: center center;
+    background-size: cover;
 }
 
 footer{
