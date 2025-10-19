@@ -3,17 +3,18 @@
 
 
 :root{
-    --fonte-BBh: font-family: "BBH Sans Hegarty", sans-serif;
-    --fonte-sriracha: font-family: "Sriracha", cursive;
+    --font1: Verdada, Geneva, Tahoma, sans-serif;
+    --fonte-BBh:"BBH Sans Hegarty", sans-serif;
+    --fonte-sriracha: "Sriracha", cursive;
 }
 
 *{
-    
     margin: 0px;
     padding: 0px;
 }
 
 html, body{
+    font-family: var(--font1);
     min-width: 100vh;
     background-color: darkgrey;
 }
@@ -24,6 +25,8 @@ header{
 }
 
 header h1{
+    font-family: var(--fonte-BBh);
+    font-size: 10vw;
     padding-top: 50px;
     font-variant: small-caps;
 }
@@ -43,14 +46,15 @@ a:hover{
 }
 
 section{
+    font-size: 3.5vw;
+    font-family: var(--fonte-sriracha);
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-left: 30px;
+    padding-left: 8px;
     line-height: 1.9em;
 }
 
 .normal{
-    font-family:var(--fonte-BBh);
     background-color: white;
     color: black;
 }
@@ -61,7 +65,8 @@ section{
 }
 
 .imagem p{
-    width: 340px;
+    display: inline-block;
+    padding: 8px;
     background-color: rgba(0, 0, 0, 0.178);
 }
 
