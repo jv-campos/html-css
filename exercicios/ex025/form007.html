@@ -6,9 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="cadatros.php" method="get" autocomplete="on">
+    <form action="cadatros.php" method="post" autocomplete="on">
         <p>
+            <label for="iest">Estado</label>
+            <select name="est " id="iest">
+                <option value="" selected > --escolha--</option>
+                <optgroup label="escolha seu estado">
+                    <option value="mg">Minas</option>
+                    <option value="pa">para</option>
+                </optgroup>
+            </select>
+        </p>
 
+        <p>
+            <label for="iprof">Profição:</label>
+            <input type="text" name="prof " id="iprof" list="litaprof">
+            <datalist id="litaprof">
+                <option value="dev">desenvolvedor</option>
+                <option value="pz">pizzaiolo</option>
+                <option value="at">atendente</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg " id="imsg" ></textarea>
         </p>
 
         <p>
